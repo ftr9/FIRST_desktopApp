@@ -28,7 +28,8 @@
           "repository": {
             "owner": "ftr9",
             "name": "FIRST_desktopApp"
-          }
+          },
+          "draft": true
         }
       }],
       "makers": [{
