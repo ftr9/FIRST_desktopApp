@@ -22,6 +22,15 @@
   "config": {
     "forge": {
       "packagerConfig": {},
+      "publishers": [{
+        "name": "@electron-forge/publisher-github",
+        "config": {
+          "repository": {
+            "owner": "ftr9",
+            "name": "FIRST_desktopApp"
+          }
+        }
+      }],
       "makers": [{
           "name": "@electron-forge/maker-squirrel",
           "config": {
@@ -54,6 +63,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.59",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.59",
     "@electron-forge/maker-zip": "^6.0.0-beta.59",
+    "@electron-forge/publisher-github": "^6.0.0-beta.59",
     "electron": "13.1.7",
     "electron-builder": "^22.11.7"
   },
