@@ -8,8 +8,8 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "build": "electron-builder build --mac --win --publish never",
-    "deploy": "electron-builder build --mac --win --publish always",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
