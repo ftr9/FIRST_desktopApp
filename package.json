@@ -1,7 +1,7 @@
 {
   "name": "begin",
   "productName": "begin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
@@ -22,17 +22,20 @@
   "config": {
     "forge": {
       "packagerConfig": {},
-      "publishers": [{
-        "name": "@electron-forge/publisher-github",
-        "config": {
-          "repository": {
-            "owner": "ftr9",
-            "name": "FIRST_desktopApp"
-          },
-          "draft": true
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "ftr9",
+              "name": "FIRST_desktopApp"
+            },
+            "draft": true
+          }
         }
-      }],
-      "makers": [{
+      ],
+      "makers": [
+        {
           "name": "@electron-forge/maker-squirrel",
           "config": {
             "name": "begin"
